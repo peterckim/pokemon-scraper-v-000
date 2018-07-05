@@ -28,6 +28,6 @@ class Pokemon
   end
   
   def alter_hp(hp, db)
-    
+    Pokemon.save(self.name, self.type, hp, db)
   end
 end
