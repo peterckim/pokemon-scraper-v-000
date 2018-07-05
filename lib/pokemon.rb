@@ -27,7 +27,7 @@ class Pokemon
     pokemon = Pokemon.new(id, name, type, hp)
   end
   
-  def alter_hp
+  def alter_hp(hp, db)
     
   end
 end
