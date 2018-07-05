@@ -11,13 +11,9 @@ class Pokemon
   
   def self.save(name, type, hp = nil, db)
     if hp == nil
-      {
-        db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type)
-      }
+      db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type)
     else
-      {
-        db.execute("INSERT INTO pokemon (name, type, hp) VALUES (?, ?, ?)", name, type, hp)
-      }
+      db.execute("INSERT INTO pokemon (name, type, hp) VALUES (?, ?, ?)", name, type, hp)
     end
   end
   
