@@ -20,6 +20,6 @@ class Pokemon
     type = array[2]
     hp = array[3]
     
-    pokemon = Pokemon.new(id, name, type)
+    pokemon = Pokemon.new(id, name, type, hp)
   end
 end
