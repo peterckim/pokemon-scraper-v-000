@@ -10,6 +10,10 @@ class Pokemon
   end
   
   def self.save(name, type, hp = nil, db)
+    if hp == nil
+      {
+        
+      }
     db.execute("INSERT INTO pokemon (name, type, hp) VALUES (?, ?, ?)", name, type, hp)
   end
   
